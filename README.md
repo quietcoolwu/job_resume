@@ -46,6 +46,10 @@ If you only need a résumé in English or have installed Adobe Simplified Chines
 git clone https://github.com/billryan/resume.git --branch master --depth 1 --single-branch <folder>
 ```
 
+### Sample Output
+
+![resume-zh_CN.png](./resume-zh_CN.png)
+
 ## License
 
 [The MIT License (MIT)](http://opensource.org/licenses/MIT)
