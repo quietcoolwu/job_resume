@@ -1,0 +1,111 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume} 
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{吴凯}
+
+\basicInfo{
+  \email{working@kaiwu.xyz} \textperiodcentered\ 
+  \phone{(+86) 133-4181-3552} \textperiodcentered\ 
+  \linkedin[Kai Wu]{https://www.linkedin.com/in/quietcoolwu} \textperiodcentered\ 
+  \github[Kai Wu]{https://github.com/quietcoolwu}
+}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{北京邮电大学}, 北京}{2015 -- 2018}
+\textit{工程硕士}\ 自动化机械工程
+\datedsubsection{\textbf{上海大学}, 上海}{2011 -- 2015}
+\textit{工学学士}\ 通信工程
+
+\section{\faUsers\ 工作经历}
+\datedsubsection{\textbf{字节跳动}}{2020/05 -- now}
+\role{广告创意中心}{后端开发工程师}
+{广告视频创意生成中台} \newline
+参考 link: 
+{\href{https://cc.oceanengine.com/creative-factory/jishi/4}{\textit{1. 巨量创意微电影}}}
+{\href{https://www.tiktok.com/business/en-US/blog/introducing-tiktok-video-editor-easily-create-native-video-ads-in-your-browser}{\textit{2. TikTok Video Editor}}}
+\begin{itemize}
+  \item 从零开始: 搭建广告创意中心非中创意生成中台, 制定面向不同国家业务, 来自上游多租户需求的通用渲染网关技术方案, 主导开发流程并周知各业务上游完成迁移方案.
+  \item 架构演进: 重构创意生成能力的核心中台架构, 整合后端配音/Lottie/OpenGL(本组自研+AI Lab etc.)的多路渲染能力, 实现了一套可实现多能力拼接的流水线系统, 并以预设组合 + DSL 形式封装组合拼接能力给上游业务方, 丰富输出生成能力并获得好评.
+  \item 资源优化: 制定节省计算资源 ROI 目标, 调研渲染耗时与在线/离线渲染服务的场景区别, 将多路能力拼接流程与 Gateway 通信全异步化(RocketMQ 交互), 增加租户隔离的产出缓存机制(Local Cache + Redis), 上线后节省机器资源 40\%, 渲染平均耗时提升 100\%.
+  \item 持续迭代: 对于不同租户的 SLA 要求搭建在线/离线 看板监控与报警方案, 建设 Oncall SOP, 建立相关用户/开发文档, 总成功率达到 99.9\% 以上, 客诉 Case Avg< 1/week.
+  \item 技术探索: 对于效果要求高的广告主制定 Full Adobe AE 的渲染方案并联系边缘计算资源搭建 MVP 方案并上线, 制定演进计划.
+\end{itemize}
+\bigbreak
+巨量星图 -- 达人营销业务
+\begin{itemize}
+  \item 参与达人平台各后端服务 Python -> Go 的不下线迁移与灰度切流策略制定, 整体全链路 p99 耗时提升 60\%, 资源 ROI 提升 150\%, 并基于内部平台提出流量降级, 熔断等治理方案.
+  \item 参考 KiteX, EventBus 等框架,参与创作者/MCN 元信息 API 后端的 DDD 架构实践.
+  \item 参与订单审核业务的整体重构与网关层建设, 建立巡检与自动/手动重放机制, 客诉率降低 40\%.
+  \item 参与组内项目质量建设, 完善 PR 单测建设与火车发布流水线等流程的标准化推进.
+\end{itemize}
+
+\datedsubsection{\textbf{Splunk}}{2018/04 -- 2020/04}
+\role{Splunk Platform Service}{后端开发工程师}
+% \begin{onehalfspacing}
+主导选型, 开发与维护内部 Splunkbase App 自动化审核工具(Docker + FE WebApp + OpenFaaS) \newline
+收集来自内部审核工程师与外部开发者客户的功能需求, 渐进开发与优化内部产品
+\begin{itemize}
+  \item 项目开始前进行方案调查与选型(中间件, 前后端框架(Vue.js + Django)选型与部署, 测试规划等).
+  \item 在开发流程中提供 PRD + Tech Dev + One Page 等文档, 提高可维护性.
+  \item 利用过往人工审核数据为审核工程师提供增量审核建议, 渐进优化全流程耗时与效率.
+  \item 根据不同的用户角色分别设计 UI 组件表示层与后端鉴权机制, 及相关表结构与查询器设计.
+  \item 开发中使用 TDD 模式, 添加单元测试, 压力测试与 e2e 测试(94\% Coverage).
+  \item 利用 OpenFaaS 函数化并拆分单体式服务, 将 CPU 密集型服务迁移到 AWS EC2 节点.
+\end{itemize}
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
+% \role{\LaTeX, Python}{个人项目}
+% \begin{onehalfspacing}
+% 优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+% \begin{itemize}
+%   \item 容易定制和扩展
+%   \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
+%   \item 支持 FontAwesome 4.5.0
+% \end{itemize}
+% \end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item Working With: Go == Python > Java > C++ > Elixir >> \LaTeX\ : )
+  \item Working On: Debian, Podman, Nerdctl, etcd, etc.
+  \item Language Skills: English(TOEFL: 106 \enspace GRE: 330)
+\end{itemize}
+
+% \section{\faHeartO\ 获奖情况}
+% \datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
+% \datedline{其他奖项}{2015}
+
+% \section{\faInfo\ 其他}
+% % increase linespacing [parsep=0.5ex]
+% \begin{itemize}[parsep=0.5ex]
+%   \item 技术博客: http://blog.yours.me
+%   \item GitHub: https://github.com/quietcoolwu
+%   \item 语言: 英语 - 熟练(TOEFL: 106 GRE: 330)
+% \end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
