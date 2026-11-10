@@ -1,0 +1,117 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+	
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Kai Wu}
+
+\basicInfo{
+  \email{working@kaiwu.xyz} \textperiodcentered\ 
+  \phone{(+86) 133-4181-3552} \textperiodcentered\ 
+  \linkedin[Kai Wu]{https://www.linkedin.com/in/quietcoolwu} \textperiodcentered\ 
+  \github[Kai Wu]{https://github.com/quietcoolwu}
+}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Beijing University of Post and Telecommunications(BUPT)}, Beijing, China}{2015 -- 2018}
+\textit{Master of Engineering}\enspace Mechanical Engineering, School of Automation
+\datedsubsection{\textbf{Shanghai University(SHU)}, Shanghai, China}{2011 -- 2015}
+\textit{Bachelor of Engineering}\enspace Telecommunications Engineering, School of Information Engineering
+
+\section{\faUsers\ Experience}
+\datedsubsection{\textbf{Bytedance Inc.} Shanghai, China}{2020/05 -- Present}
+\role{Ads Creative Center}{Backend SDE}
+\datedsubsection{I. Video Ads Generation Platform -> \href{https://www.tiktok.com/business/en-US/blog/introducing-tiktok-video-editor-easily-create-native-video-ads-in-your-browser}{\underline{\textit{TikTok Video Editor Introduction}}}}{2020/05 -- 2022/03}
+Accountable for non-native video ads generation for TikTok etc.
+\begin{itemize}
+  \item From Scratch: Owned and built Ads Creative Center API Gateway + Scheduler(\textbf{Go + MySQL + Redis + RocketMQ}) for upstreaming tenants, led the scrum dev for team members on all related services.
+  \item Evolution: Include various skillsets combination(among Audiomixing/Lottie/OpenGL rendering etc.) to \textbf{customizable DAG pipelines}, got Achievement beyond Expectation award.
+  \item Optimization: Found the bottleneck and refactored current rendering workflow to fully asynchronized, added DAG vertex rendering cache and dynamic flowcontrol for calling to downstream services,
+  thus \textbf{lowering the resource usage for 40\%, and halved the avg rendering time.}
+  \item Reliability: Created online/offline dashboard/bot for better monitoring and alarming, 
+  after full launch the \textbf{SLA uptime reached to 99.9\%+}, and tenant case report on rendering < 1/week avg.
+  \item Exploration: Composed rendering pipeline using real full Adobe AE for lossless visual effects and deliver within challenging deadline(3 weeks).
+  \item Efficiency: Developed Internal Auditing Portal as a historical data searching(\textbf{Spring + Elasticsearch}) for internal auditing/debugging.
+\end{itemize}
+% \bigbreak
+\datedsubsection{II. Douyin Creator Star Platform -> \href{https://www.oceanengine.com/blog/jiedian-daren-xingtu.html}{\underline{\textit{Douyin Star Project Introduction(CN)}}}}{2022/03 -- Present}
+Accountable for Creator/Advertiser matching/marketplace platform etc.
+\begin{itemize}
+  \item Joined the seamless code migration from Python to Go, \textbf{lowered 60\% of the pct99 e2e time cost}, 
+  and optimized Computing Resource/Revenue ROI to 1.5x.
+  \item Joined the DDD refactoring of creator' meta info API service based on internal best practice. 
+  \item Built the UGC Audit Gateway service to unify the auditing entrance, and created manual/auto false case replaying mechanic from scratch, thus lowering 40\% of the complaint.
+  % \item Joined the team SRE project, helped to push the unittest coverage and release train pipeline, etc.
+\end{itemize}
+
+
+\datedsubsection{\textbf{Splunk Inc.} Shanghai, China}{2018/04 -- 2020/04}
+\role{Splunkbase Efficiency Tools}{Fullstack SDE}
+Developed and maintained -> \href{https://dev.splunk.com/enterprise/docs/releaseapps/appinspect}{\underline{\textit{Splunk AppInspect Toolset}}}
+\begin{itemize}%
+  % \item Developed from scratch and maintined an internal app review tool for progressive efficiency.
+  % \item Gather feedbacks and feature requests from internal users and customers, and:
+    % \begin{itemize}%
+      \item Owned and built internal app review efficiency tool.(\textbf{Django + Vue.js + OpenFaaS})
+      \item Gather feedbacks/feature inquiry from users and customers, led the scrum dev for product iteration.
+      \item Utilized historical human review data as advice on review tickets to implement Pareto optimality.
+      \item TDD in practice on testing with 94\% coverage, and did runtime profiling to find the bottleneck.
+    % \end{itemize}
+\end{itemize}
+\bigbreak
+Other Intern Experiences: NetEase Games, Meituan, Douban etc.
+
+% \datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
+% \role{\LaTeX, Maintainer}{Individual Projects}
+% An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+% \begin{itemize}
+%   \item Easy to be further customized or extended
+%   \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
+%   \item FontAwesome 4.5.0 support
+% \end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faInfo\ Miscellaneous}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  % \item Working With: Go == Python > Java > C++ > Elixir >> \LaTeX\ : )
+  % \item Working On: Debian, Podman, Nerdctl, etcd, ELK stack, etc.
+  \item Tech Stack: Go, Python, Rust, SQL/NoSQL, Containerd, etcd, Serverless, Kafka, RocketMQ etc.
+  \item Language Skills: English Fluent Speaking/Writing (TOEFL: 106 GRE: 330)
+\end{itemize}
+
+% \section{\faCogs\ Skills}
+% \begin{itemize}[parsep=0.5ex]
+%   \item Programming Languages: C == Python > C++ > Java
+%   \item Platform: Linux
+%   \item Development: Web, xxx
+% \end{itemize}
+
+% \section{\faHeartO\ Honors and Awards}
+% \datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
+% \datedline{Other awards}{2015}
+
+% \section{\faInfo\ Miscellaneous}
+% \begin{itemize}[parsep=0.5ex]
+%   \item Blog: http://your.blog.me
+%   \item GitHub: https://github.com/username
+%   \item Languages: English - Fluent, Mandarin - Native speaker
+% \end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
